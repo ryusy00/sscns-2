@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>성산C&S 웹사이트 시안2</title>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <!-- 헤더, 네비게이션 영역 -->
+    <header id="topBox">   
+        <div id="header-wrap">
+            <div class="logo-home">
+                <a href="index.html">
+                    <img src="images/header-logo.png" alt="헤더 로고">
+                </a>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="#">About</a>
+                    <ul class="sub1">
+                        <li><a href="index.html">introduction</a></li>
+                        <li><a href="index.html">history</a></li>
+                        <li><a href="index.html">Location</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Business</a>
+                    <ul class="sub1">
+                        <li><a href="index.html">Business</a></li>
+                        <li><a href="index.html">SI</a></li>
+                        <li><a href="index.html">Outsourcing</a></li>
+                        <li><a href="index.html">IT Consulting</a></li>
+                        <li><a href="index.html">Solution</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Recruit</a>
+                    <ul class="sub1">
+                        <li><a href="#">Recruit</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                    <ul class="sub1">
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburgerBtn">
+                <a href="index.html" class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <div id="gnb" class="menu-box">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="sub">
+                        <li><a href="index.html">introduction</a></li>
+                        <li><a href="index.html">history</a></li>
+                        <li><a href="index.html">Location</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Business</a>
+                    <ul class="sub">
+                        <li><a href="index.html">Business</a></li>
+                        <li><a href="index.html">System Integration</a></li>
+                        <li><a href="index.html">Outsourcing</a></li>
+                        <li><a href="index.html">IT Consulting</a></li>
+                        <li><a href="index.html">Solution</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html">Recruit</a>
+                </li>
+                <li>
+                    <a href="index.html">News</a>
+            </ul>
+        </div>
+    </header>
+    <!-- 메인 배너 영역 -->
+    <section id="main-banner">
+        <div class="main-title">
+            <h2>Be creative, with infinite potential.</h2>
+            <p>IT 비즈니스에 필요한 모든것이 (주)성산씨엔에스에 있습니다.</p>
+        </div>
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="images/12336027-uhd_2560_1440_30fps.mp4" type="video/mp4" style="filter:saturation(50%)" />
+            </video>
+        </div>
+        <div class="scroll-down-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <img src="images/intro-bg.png" alt="intro-bg">
+    </section>
+    <!-- 기업소개 멘트 영역 -->
+    <section id="introduction">
+        <div id="intro-text-wrap">
+            <h2 class="intro-animate-right">Best Partner for Customers</h2>
+            <h5 class="intro-animate-up">
+                변화의 속도를 가늠하기 힘든 현재. <br>
+                (주)성산씨엔에스는 선택을 위한 올바른 판단을 고민합니다. 항상 새로운 것에 대한 도전은 더 나은 것, 꼭 필요한 것에 대한 선택이며, <br>
+                그것은  저희로 하여금 끊임없이 연구하고 더 많은 것으로 향해 생각을 갖도록 스스로를 자극하는 것입니다.
+            </h5>
+            <p class="intro-animate-up">
+                고객에게 최고의 파트너가 되며, 인재를 소중히 여기고, <br>
+                기술우위를 점유하여 시스템을 만들어 보여주겠습니다.  
+            </p>
+        </div>
+        <div class="scroll-down-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <!-- 사업소개 영역 -->
+    <section id="business-wrap">
+        <h2>Our Business <span><a href="#">&nbsp;→</a></span></h2>
+        <div id="business-content-wrap">
+            <ul>
+                <li>
+                    <div class="img">
+                        <img src="images/si.jpg" alt="si">
+                        <span>#SI #S/W #H/W #SOLUTION</span>
+                    </div>
+                    <h4>System Integration</h4>
+                    <p>
+                        고객의 기업 비지니스 프로세스 전반의 경영 효율화와 <br>
+                        설계 및 구축에 대한 H/W, S/W, <br>
+                        솔루션을 포함한 통합 시스템을 제공합니다.
+                    </p>
+                    <button>자세히보기</button>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="images/os.jpg" alt="os">
+                        <span>#IT기획 #SW개발 #시스템진단</span>
+                    </div>
+                    <h4>Outsourcing</h4>
+                    <p>
+                        IT기획을 포함한 정보화 전략수립, <br>
+                        신규 소프트웨어 개발, 시스템 진단까지 <br>
+                        서비스 일체를 제공합니다.
+                    </p>
+                    <button>자세히보기</button>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="images/IC.jpg" alt="IC">
+                        <span>#IT전략 #MASTER #PLAN</span>
+                    </div>
+                    <h4>IT Consulting</h4>
+                    <p>
+                        기업의 목표에 부합한 IT 전략, Master Plan을 <br>
+                        수립하여 it효율의 극대화에 기여 하도록 해드립니다.   
+                    </p>
+                    <button>자세히보기</button>
+                </li>
+                <li class="sl">
+                    <div class="img">
+                        <img src="images/SL.jpg" alt="SL">
+                        <span>#CONSULTING #시스템구축</span>
+                    </div>
+                    <h4>Solution</h4>
+                    <p>
+                        (주)성산씨엔에스는 컨설팅, 시스템 구축 운영에 <br>
+                        이르기까지 종합적인 IT 서비스를 제공합니다.  
+                    </p>
+                    <button>자세히보기</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 슬라이드 텍스트 -->
+    <div class="slider">
+        <div class="slider-wrapper">
+            <img src="images/slide-txt.png" alt="slide-txt">
+            <img src="images/slide-txt.png" alt="slide-txt">
+            <img src="images/slide-txt.png" alt="slide-txt">
+            <img src="images/slide-txt.png" alt="slide-txt">
+        </div>
+    </div>
+    <!-- 회사소개서 영역 -->
+    <section id="profile-wrap">
+        <div class="profile-text">
+            <h2>Be creative, with infinite potential.</h2>
+            <p>가치를 통해 신뢰를 얻는 IT 전문계열 (주)성산씨엔에스의 회사소개서입니다.</p>
+        </div>
+        <button>
+            <a href="#" download>회사소개서 ↓</a>
+        </button>
+    </section>
+    <!-- 솔루션 영역 -->
+    <section id="solution-wrap">
+        <h2>Our Solution <span><a href="#">→</a></span></h2>
+        <div id="solution-content-wrap">
+            <div id="yescare">
+                <div class="solution-img">
+                    <img src="images/yescare.png" alt="scms">
+                </div>
+                <h2>01</h2>
+                <h3>Yes Care</h3>
+                <button>자세히보기</button>
+                <h4>재가요양 업무관리 프로그램</h4>
+                <p>
+                    요양센터의 업무를 신속 정확하게 효율적으로 <br>
+                    운영 할 수 있도록 지원하는 시스템입니다.
+                </p>
+            </div>
+            <div id="IL">
+                <div class="solution-img">
+                    <img src="images/Integrated-library.png" alt="scms">
+                </div>
+                <h2>02</h2>
+                <h3>Integrated <br>Library Log</h3>
+                <button>자세히보기</button>
+                <h4>도서관 통합일지 프로그램</h4>
+                <p>
+                    도서관 운영에 필요한 일지관리를 통합으로 <br>
+                    관리할 수 있도록 지원하는 시스템
+                </p>
+            </div>
+            <div id="scms">
+                <div class="solution-img">
+                    <img src="images/scms.png" alt="scms">
+                </div>
+                <h2>03</h2>
+                <h3>SCMS</h3>
+                <button>자세히보기</button>
+                <h4>웹 콘텐츠 관리 시스템</h4>
+                <p>
+                    전자정부표준프레임워크 기반의 웹 콘텐츠 <br>
+                    관리시스템으로써 웹사이트 운영을 효율적으로 <br>
+                    관리할 수 있는 시스템입니다.
+                </p>
+            </div>
+            <div id="permanent">
+                <div class="solution-img">
+                    <img src="images/permanent.png" alt="scms">
+                </div>
+                <h2>04</h2>
+                <h3>Permanent <br>Rental deposit</h3>
+                <button>자세히보기</button>
+                <h4>영구임대보증금지원 관리 시스템</h4>
+                <p>
+                    영구임대주택 신규 입주자 중 장애인 등 요건 해당 세대에 <br>
+                    대하여 임대보증금을 지원하는 업무관리 시스템
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- contact 영역 -->
+    <section id="contact-wrap">
+        <div id="contact-title-wrap">
+            <h2>Contact us <span><a href="#">→</a></span></h2>
+        </div>
+        <div id="contact-content-wrap">
+            <div id="contact-left">
+                <form name="frm" action="/" method="post" class="contact-send">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="name-label">
+                                <span>*</span>
+                                <label for="name">Name</label>
+                            </div>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="name-label">
+                                <span>*</span>
+                                <label for="name">Phone</label>
+                            </div>
+                            <input type="text" name="phone" id="phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="name">Email</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="name-label">
+                                <span>*</span>
+                                <label for="name">Write Message</label>
+                            </div>
+                            <input type="text" name="message" id="message" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <input type="button" value="send" class="submit-btn">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="contact-right">
+                <ul class="info">
+                    <li>
+                        <div class="icon-wrap">
+                            <span><img src="images/contact-address.png" alt="주소"></span>
+                            <h3>Address.</h3>
+                        </div>
+                        <p>(61981) 광주광역시 서구 대남대로 465 광주상공회의소 503호</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrap">
+                            <span><img src="images/contact-tel.png" alt="전화"></span>
+                            <h3>Tel.</h3>
+                        </div>
+                        <p>068-676-9960~2</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrap">
+                            <span><img src="images/contact-fax.png" alt="팩스"></span>
+                            <h3>Fax.</h3>
+                        </div>
+                        <p>068-676-4554</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 푸터 영역 -->
+    <section id="footer">
+        <div id="footer-top">
+            <div id="footer-info-wrap">
+                <div id="footer-logo">
+                    <img src="images/footer-logo.png" alt="footer-logo">
+                </div>
+                <div id="footer-info1">
+                    <dl>
+                        <dt>Company</dt>
+                        <dd>(주)성산씨엔에스</dd>
+                    </dl>
+                    <dl>
+                        <dt>Ceo</dt>
+                        <dd>이현자</dd>
+                    </dl>
+                    <dl>
+                        <dt>Contact</dt>
+                        <dd>sscns@daum.net</dd>
+                    </dl>
+                </div>
+                <div id="footer-info2">
+                    <dl>
+                        <dt>Tel.</dt>
+                        <dd>068-676-960</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax.</dt>
+                        <dd>062-646-4554</dd>
+                    </dl>
+                    <dl>
+                        <dt>Address</dt>
+                        <dd>
+                            광주광역시 서구 대남대로 465 <br>
+                            상공회의소 빌딩 503호
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <ul id="site-map">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">RECRUIT</a></li>
+            <li><a href="#">NEWS</a></li>
+        </ul>
+        <button id="top-btn">
+            <a href="index.html">↑</a>
+        </button>
+        <div id="footer-bottom">
+            <ul id="privacy">
+                <li><a href="#">회사소개</a></li>
+                <span>|</span>
+                <li><a href="#">개인정보처리방침</a></li>
+                <span>|</span>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <p id="copy-right">COPYRIGHT ©2024 SSCNS ALL RIGHTS RESERVED</p>
+        </div>
+    </section>
+</body>
+</html>
