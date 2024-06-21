@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// 사없호개 영역 스크롤 시 fade-in 애니메이션
 document.addEventListener('DOMContentLoaded', function() {
     const items = document.querySelectorAll('#business-content-wrap > ul > li');
 
@@ -133,4 +134,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', checkScroll);
     checkScroll(); // Initial check on page load
+});
+
+// 전체 요소 스크롤 시, 애니메이션
+window.addEventListener('scroll', function() {
+    // 스크롤 위치
+    var scrollPosition = window.scrollY;
+    // 애니메이션을 시작할 위치
+    var triggerPosition = document.getElementById('solution-content-wrap').offsetTop - window.innerHeight;
+    var triggerPosition2 = document.getElementById('contact-wrap').offsetTop - window.innerHeight;
+
+    if (scrollPosition > triggerPosition) {
+        document.querySelector('#solution-wrap > h2').classList.add('animated');
+        document.getElementById('yescare').classList.add('animated');
+        document.getElementById('IL').classList.add('animated');
+        document.getElementById('scms').classList.add('animated');
+        document.getElementById('permanent').classList.add('animated');
+    }
+    if (scrollPosition > triggerPosition2) {
+        document.getElementById('contact-title-wrap').classList.add('animated');
+        document.getElementById('contact-content-wrap').classList.add('animated');
+    }
 });

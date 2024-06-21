@@ -14,6 +14,20 @@ body {
     transition: all 0.1s ease;
     z-index: 9999;
 }
+.animated {
+    animation: fadeInUp 2s ease-out; /* 1초 동안 위로 나타나는 애니메이션 */
+    transition: opacity 1s ease; /* opacity 변경 시 부드럽게 전환되도록 */
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px); /* 요소를 아래로 숨김 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* 요소를 위로 이동하여 나타냄 */
+    }
+}
 /* 헤더 영역 */
 #topBox {
     width: 100vw;
@@ -41,9 +55,14 @@ body {
     margin-left: 40px;
 }
 #menu > li {
-    width: 120px;
+    width: 130px;
     position: relative;
     text-align: center;
+}
+#menu > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
 #menu > li:hover > a {
     text-decoration: underline;
@@ -55,10 +74,10 @@ body {
     display: none;
 }
 .sub1 > li {
-    width: 120px;
+    width: 130px;
     height: 40px;
     line-height: 40px;
-    font-size: 17px;
+    font-size: 19px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 .sub1 > li > a {
@@ -70,11 +89,6 @@ body {
 }
 .sub1 > li:hover a {
     color: #fff;
-}
-#menu > li > a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
 }
 #topBox.scrolled .logo-home > a > img {
     filter: invert(1); /* 흰색 이미지를 검정색으로 변환 */
@@ -179,10 +193,10 @@ body {
 }
 .menu-box > ul > li{
     width: 100%;
-    height: 120px;
+    height: 130px;
     font-size: 40px;
     font-weight: 600;
-    line-height: 120px;
+    line-height: 150px;
     text-align: center;
     cursor: pointer;
 }
@@ -203,11 +217,7 @@ body {
     font-style: normal;
     color: white;
     text-decoration: none;
-    /* transition: color 0.3s; */
 }
-/* #topBox.scrolled .menu-box a {
-    color: black;
-} */
 /*  메인배너 영역  */
 #main-banner {
     width: 100%;
@@ -234,9 +244,9 @@ body {
 }
 .main-title {
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 50%;
-    transform: translate(-50%,-45%);
+    transform: translate(-50%,-42%);
     color: #fff;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
@@ -289,7 +299,7 @@ body {
 }
 #intro-text-wrap {
     width: 100%;
-    opacity: 0; /* 처음에 보이지 않도록 설정 */
+    opacity: 0;
     text-align: center;
 }
 #intro-text-wrap > h2 {
@@ -297,9 +307,13 @@ body {
     font-family: "Noto Serif",serif;
     font-weight: 600;
 }
-#intro-text-wrap > p,
 #intro-text-wrap > h5 {
-    margin-top: 50px;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#intro-text-wrap > p {
+    margin-top: 70px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -348,8 +362,6 @@ body {
     margin-left: 5%;
     width: 90%;
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 #business-content-wrap > ul > li  {
     width: 450px;
@@ -448,6 +460,10 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+#business-content-wrap > ul > li > button:hover {
+    color: #366171;
+    font-weight: bold;
+}
 .sl { z-index: 100;}
 /* 슬라이드 텍스트 */
 .slider {
@@ -529,6 +545,9 @@ body {
     text-decoration: none;
     color: #fff;
 }
+#profile-wrap > button:hover {
+    background-color: #366171;
+}
 #profile-wrap:hover {
     color: #366171;
 }
@@ -543,6 +562,9 @@ body {
 }
 #profile-wrap:hover > button > a{
     color: #366171;
+}
+#profile-wrap > button:hover > a {
+    color: #fff;
 }
 /* 솔루션 영역 */
 #solution-wrap {
